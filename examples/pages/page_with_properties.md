@@ -1,0 +1,26 @@
+- title:: Page With Properties
+- type:: [[Blog]]
+- date:: [[May 12th, 2024]]
+- tags:: #tutorial, #logseq, #formatting
+- public:: true
+- description:: This page demonstrates how properties work in Logseq
+- # Page with Properties
+- Logseq pages can have properties at the top that define metadata
+- Properties use the format `property:: value`
+- ## Using properties
+- Properties can be referenced within a page using the `{{property}}` syntax
+- For example, this page has a description: {{description}}
+- Properties can have various types of values:
+  - Simple text: `title:: My Page`
+  - Page references: `type:: [[Blog]]`
+  - Date references: `date:: [[May 12th, 2024]]`
+  - Tags: `tags:: #tutorial, #logseq`
+  - Boolean values: `public:: true`
+  - Numbers: `order:: 5`
+- ## Special Properties
+- Some properties have special meaning in Logseq:
+  - `public`: Controls visibility in publish
+  - `title`: The display name of the page
+  - `alias`: Alternative names for the same page
+  - `tags`: Categorization (same as using hashtags in content)
+  - `template`: Indicates a page is a template

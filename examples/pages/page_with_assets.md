@@ -1,0 +1,26 @@
+- # Page with Assets
+- Logseq allows embedding various types of assets that need special handling
+- ## Images
+- Images can be embedded inline: ![](../assets/image.png)
+- Or with a specific size: ![](../assets/image.png){:width 300, :height 200}
+- ## Excalidraw Drawings
+- Logseq supports Excalidraw drawings:
+- {{renderer :excalidraw, excalidraw-2023-05-12-21-45.excalidraw}}
+- ## YouTube Videos
+- YouTube videos use this format:
+- {{youtube https://www.youtube.com/watch?v=dQw4w9WgXcQ}}
+- ## Audio Files
+- Audio files can be embedded:
+- {{audio ../assets/audio.mp3}}
+- ## PDF Files
+- PDF files can be embedded with specific options:
+- {{pdf ../assets/document.pdf, page=5}}
+- ## Math Equations
+- Math equations use LaTeX format:
+- $$E = mc^2$$
+- ## Callouts
+- Logseq supports callouts for highlighted information:
+- > [!NOTE] Important information
+  > This is a callout with a note
+- > [!WARNING] Be careful
+  > This is a warning callout

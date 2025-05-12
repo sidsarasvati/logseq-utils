@@ -1,0 +1,47 @@
+{:project {
+           ;; Selected public notes can be published to https://logseq.com/your-project-name
+           :name "Example Logseq Graph"
+           :alias "example-graph"
+           ;; Your project namespace (will be created if not exists)
+           :namespace "example-graph"
+           ;; Custom domain
+           :domain "example.com"
+           ;; Git settings
+           :git-pull-remotes ["origin"]
+           :git-push-remotes ["origin"]}
+
+ ;; Currently, we support either "Markdown" or "Org".
+ ;; This can overwrite your global preference so that
+ ;; maybe your personal preferred format is Org but you'd
+ ;; need to use Markdown for some projects.
+ :preferred-format "Markdown"
+
+ ;; Preferred workflow style.
+ ;; Value is either ":now" for NOW/LATER style,
+ ;; or ":todo" for TODO/DOING style.
+ :preferred-workflow :now
+
+ ;; The app will ignore those directories or files.
+ ;; E.g. "/archived" "/test.md"
+ :hidden ["/archived" "/templates"]
+
+ ;; When creating the new journal page, the app will use your template if there is one.
+ ;; Template file name can be either "template.md" or "templates.org",
+ ;; depending on whether you're using markdown or org-mode.
+ :templates {:journals "templates/daily-note"}
+
+ ;; Default journal page template, created when no :template-dir exists
+ :default-templates
+ {:journals "## Summary\n\n## Tasks\n\n## Ideas\n\n"}
+
+ ;; Whether to enable hover preview on pages
+ :ui/enable-tooltip? true
+
+ ;; Enable Block timestamps
+ :feature/enable-block-timestamps? false
+
+ ;; Disable Built-in Scheduled and deadline Query
+ :feature/disable-scheduled-and-deadline-query? false
+
+ ;; Enable all pages public (published)
+ :publishing/all-pages-public? false}

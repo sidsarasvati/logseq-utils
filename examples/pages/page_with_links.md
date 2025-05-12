@@ -1,0 +1,19 @@
+- # Page with Various Link Formats
+- Logseq supports several link formats that need to be handled during conversion
+- ## Page Links
+- Internal page links use double brackets: [[Another Page]]
+- You can have links with different display text: [[Another Page][custom label]]
+- ## Block Links and Embeds
+- This is a link to a specific block: ((64f8a1c9-8e3e-4a57-a0f7-cb3619102244))
+- This is an embed of a block: {{embed ((64f8a1c9-8e3e-4a57-a0f7-cb3619102245))}}
+- ## External Links
+- Regular Markdown links work: [External Link](https://example.com)
+- Logseq also supports this format: https://example.com
+- ## File Links
+- Links to files use this format: [PDF Document](../assets/document.pdf)
+- ## Tag Links
+- Tags are also a form of link: #tutorial
+- Nested tags are supported: #tutorial/logseq
+- ## Namespace Links
+- Logseq supports namespaced pages: [[tutorials/logseq]]
+- These create a hierarchical structure in the graph
