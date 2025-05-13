@@ -20,7 +20,6 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
     - run: npm install
     - run: npm run lint || echo "Lint may have issues but continuing"
     - run: npm test || echo "Tests may have issues but continuing"
