@@ -43,7 +43,7 @@ coverage/
 .env.production.local
 
 # Package files
-package-lock.json
+# package-lock.json is now tracked for GitHub Actions
 yarn.lock
 
 # IDE / editors
