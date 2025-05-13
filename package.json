@@ -1,10 +1,10 @@
 {
-  "name": "logsmith",
+  "name": "logseq-smith",
   "version": "0.1.0",
   "description": "A toolkit for transforming and working with Logseq data",
   "main": "src/index.js",
   "bin": {
-    "logsmith": "src/cli/index.js"
+    "logseq-smith": "src/cli/index.js"
   },
   "scripts": {
     "test": "jest",

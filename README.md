@@ -1,4 +1,4 @@
-# LogSmith
+# Logseq Smith
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -19,13 +19,13 @@ A toolkit for transforming and working with Logseq data. Currently includes a po
 ### Global Installation
 
 ```bash
-npm install -g logsmith
+npm install -g logseq-smith
 ```
 
 ### Local Installation
 
 ```bash
-npm install logsmith
+npm install logseq-smith
 ```
 
 ## Usage
@@ -34,13 +34,13 @@ npm install logsmith
 
 ```bash
 # Basic usage
-logsmith --input /path/to/logseq/graph --output /path/to/output/directory
+logseq-smith --input /path/to/logseq/graph --output /path/to/output/directory
 
 # Options
-logsmith --input ~/Notes/my-graph --output ~/Exports/markdown --flat --no-assets
+logseq-smith --input ~/Notes/my-graph --output ~/Exports/markdown --flat --no-assets
 
 # Show help
-logsmith --help
+logseq-smith --help
 ```
 
 ### Command Alias
@@ -49,10 +49,10 @@ For quicker access, you may want to set up an alias:
 
 ```bash
 # Add to your ~/.bashrc or ~/.zshrc
-alias lg="logsmith"
+alias lgs="logseq-smith"
 
 # Now you can use the shorter command
-lg --input ~/LogseqGraph --output ~/ExportedMarkdown
+lgs --input ~/LogseqGraph --output ~/ExportedMarkdown
 
 ### Options
 
@@ -70,7 +70,7 @@ lg --input ~/LogseqGraph --output ~/ExportedMarkdown
 You can also use the tool programmatically:
 
 ```javascript
-const { convertGraph } = require('logsmith');
+const { convertGraph } = require('logseq-smith');
 
 async function convert() {
   const result = await convertGraph({

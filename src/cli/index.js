@@ -13,7 +13,7 @@ const packageJson = require('../../package.json');
 
 // Configure CLI options
 program
-  .name('logsmith')
+  .name('logseq-smith')
   .description('A toolkit for transforming and working with Logseq data')
   .version(packageJson.version)
   .requiredOption('-i, --input <directory>', 'Logseq graph directory')
