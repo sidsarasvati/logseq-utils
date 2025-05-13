@@ -1,0 +1,38 @@
+# Development files
+docs/
+examples/
+test/
+.eslintrc.json
+.prettierrc
+jest.config.js
+.husky/
+.github/
+CONTRIBUTING.md
+REFACTORING.md
+
+# Source control
+.git/
+.gitignore
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build artefacts
+coverage/
+.nyc_output/
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temp files
+temp/
+tmp/

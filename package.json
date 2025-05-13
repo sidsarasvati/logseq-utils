@@ -1,17 +1,19 @@
 {
-  "name": "logseq-to-md",
+  "name": "logsmith",
   "version": "0.1.0",
-  "description": "Convert Logseq format to standard Markdown",
+  "description": "A toolkit for transforming and working with Logseq data",
   "main": "src/index.js",
   "bin": {
-    "logseq-to-md": "src/cli/index.js"
+    "logsmith": "src/cli/index.js"
   },
   "scripts": {
     "test": "jest",
     "lint": "eslint src",
     "start": "node src/cli/index.js",
     "format": "prettier --write \"src/**/*.js\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "mkdir -p dist && cp -r src/* dist/",
+    "prepublishOnly": "npm run test && npm run lint && npm run build"
   },
   "keywords": [
     "logseq",
@@ -20,7 +22,15 @@
     "notes",
     "knowledge-base"
   ],
-  "author": "",
+  "author": "Sid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sidsarasvati/logseq-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sidsarasvati/logseq-utils/issues"
+  },
+  "homepage": "https://github.com/sidsarasvati/logseq-utils#readme",
   "license": "MIT",
   "dependencies": {
     "commander": "^9.4.1",

@@ -13,8 +13,8 @@ const packageJson = require('../../package.json');
 
 // Configure CLI options
 program
-  .name('logseq-to-md')
-  .description('Convert Logseq graph to standard Markdown')
+  .name('logsmith')
+  .description('A toolkit for transforming and working with Logseq data')
   .version(packageJson.version)
   .requiredOption('-i, --input <directory>', 'Logseq graph directory')
   .requiredOption('-o, --output <directory>', 'Output directory for converted files')
