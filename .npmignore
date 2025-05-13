@@ -9,6 +9,9 @@ jest.config.js
 .github/
 CONTRIBUTING.md
 REFACTORING.md
+.claude/
+test-conversion.js
+logseq-to-markdown/
 
 # Source control
 .git/
